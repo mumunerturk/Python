@@ -1,0 +1,47 @@
+#Python veri tipleri
+#string metinsel ifadeler için kullanılır. tırnak içine yazılır
+x="Merhaba dünya"
+print(x)
+#integer tam sayı
+y=10
+print(y)
+#float ondlıklı sayı
+z=7.5
+print(z)
+#complex karmaşık sayılar
+c=3.4j
+print(c)
+
+#boolean  mantıksal true false döndüre veri tipi
+print(9==7) # false
+print(2==2) #true
+
+#list (liste) farklı veri türlerinden olşan sıralı dizi. değiştirilebilir
+listem=["Ankara","Bursa",8,3.14]
+print(listem)
+
+#demet(tuple) listeye benzeyen ama değiştirilemez olan veri tipi.
+
+demet=("Ankara","Bursa",15)
+print(demet)
+
+#sözlük(dictionary) anahtar- değer çiftlerinden olşur.
+sozluk={1:"Ankara",2:"Bursa",3:"İzmir"}
+print(sozluk)
+
+#kodlama.io veri tipi örnekleri
+    #eğitmen ve eğitim isimleri string veri tipi
+    #eğitmen listesi liste örneği
+    #eğitim tamamlanma oranı integer
+    
+#kodlama.io şart blokları örneği kullanıcı adı ve şifre olabilir
+user1="Ahmet"
+password1="1234"
+ 
+username = input("Kullanici adi giriniz : ")
+password = input("Sifre giriniz : ")
+
+if user1==username and password1==password:
+    print("Giriş Başarılı")
+else:
+    print("Kullanıcı adı veya Şifreniz hatalı")
