@@ -1,0 +1,50 @@
+# öğrenci ekleme
+student=["Ahmet Kurt","Ali Beyaz","Ayşe Kuş"]
+def addStudent():
+    nane=input("öğreci adı giriniz:")
+    surname=input("öğrenci soyadı giriniz:")
+    ogrencAdiSoyadi=nane +" " +surname
+    student.append(ogrencAdiSoyadi)
+    print(student)
+addStudent()
+
+# öğrenci silme
+student=["Ahmet Kurt","Ali Beyaz","Ayşe Kuş"]
+def dellStudent():
+    nane=input("silinecek öğreci adı giriniz:")
+    surname=input("öğrenci soyadı giriniz:")
+    ogrencAdiSoyadi=nane +" " +surname
+    student.remove(ogrencAdiSoyadi)
+    print(student)
+dellStudent()
+
+# birden fazla öğrenci ekleme
+def multiStudentAdd():
+    sayi=int(input(" eklenecek öğrenci sayısı : "))
+    
+    for i in range(sayi):
+        addStudent()
+multiStudentAdd()
+
+# birden fazla öğrenci silme
+def multiStudentDell():
+    sayi=int(input(" silinecek öğrenci sayısı : "))
+    
+    for i in range(sayi):
+        dellStudent()
+multiStudentDell()
+
+# öğrenci listesi
+def studentList():
+    for i in student:
+        print(i)
+studentList()
+
+
+# öğrenci no yazdırma
+def studentNumber():
+    student1 = input("öğrenci numrası için ad soyad giriniz: ")
+    for i in range(len(student)):
+      if student[i] == student1: 
+        print(i)
+studentNumber()
